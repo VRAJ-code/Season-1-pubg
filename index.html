@@ -7,85 +7,88 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
+      margin: 0; padding: 0;
       font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f0f0f0;
+      background-image: url('05BB887D-D374-48AD-8526-6F0AB771D09E.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
       overflow-x: hidden;
     }
     .overlay {
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
+      background-color: rgba(0, 0, 0, 0.85);
+      min-height: 100vh;
+      padding: 30px 20px;
     }
     h1, h2 {
       text-align: center;
-      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
     h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       color: #ffcc00;
-      margin-bottom: 10px;
+      animation: slideDown 1s ease-out;
     }
     h2 {
-      font-size: 1.5rem;
-      color: #ff6f61;
+      color: #ff5733;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
     .card {
-      background: rgba(255, 255, 255, 0.06);
-      backdrop-filter: blur(15px);
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      margin: 20px 0;
-      padding: 20px;
-      animation: fadeIn 0.8s ease forwards;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 1000px;
+      animation: fadeIn 1s ease forwards;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      overflow-x: auto;
+      margin-top: 15px;
     }
     th, td {
-      padding: 12px 10px;
+      padding: 12px;
       text-align: center;
     }
     th {
-      position: sticky;
-      top: 0;
-      background-color: rgba(255, 51, 51, 0.95);
-      color: #fff;
-      font-weight: 700;
-      z-index: 2;
+      background-color: rgba(255, 51, 51, 0.9);
+      cursor: default;
     }
     tr.team-row {
       cursor: pointer;
-      transition: background 0.2s;
+    }
+    tr.team-row:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.05);
     }
     tr.team-row:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background-color: rgba(255, 255, 255, 0.1);
     }
     tr.expand {
       display: none;
-      background: rgba(255, 255, 255, 0.05);
+      background-color: rgba(255, 255, 255, 0.08);
       color: #ffd166;
-      transition: all 0.3s ease;
+      font-weight: 500;
     }
     tr.expand td {
-      padding-left: 30px;
+      padding-left: 40px;
       text-align: left;
-      font-size: 0.95rem;
     }
     @keyframes fadeIn {
       from {opacity: 0; transform: translateY(20px);}
       to {opacity: 1; transform: translateY(0);}
     }
+    @keyframes slideDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
     @media (max-width: 768px) {
       h1 { font-size: 2rem; }
-      h2 { font-size: 1.2rem; }
+      h2 { font-size: 1.3rem; }
       table, th, td { font-size: 0.9rem; }
-      .card { padding: 15px; }
-      th, td { padding: 8px 5px; }
     }
   </style>
 </head>
@@ -95,7 +98,7 @@
     <h2>Season 1 Leaderboard</h2>
 
     <div class="card">
-      <h2>Team Standings (Tap to Expand Players)</h2>
+      <h2>Team Standings (Click team row to see players)</h2>
       <table id="teamTable">
         <thead>
           <tr>
@@ -108,27 +111,92 @@
           </tr>
         </thead>
         <tbody>
-          <!-- MUMBAI -->
           <tr class="team-row" data-team="MUMBAI">
-            <td>1</td><td>MUMBAI</td><td>3</td><td>45</td><td>21</td><td>66</td>
+            <td>1</td>
+            <td>MUMBAI</td>
+            <td>3</td>
+            <td>45</td>
+            <td>21</td>
+            <td>66</td>
           </tr>
           <tr class="expand" data-parent="MUMBAI"><td colspan="6">HARDIK (12 kills)</td></tr>
           <tr class="expand" data-parent="MUMBAI"><td colspan="6">JOKER (5 kills)</td></tr>
           <tr class="expand" data-parent="MUMBAI"><td colspan="6">GOD (2 kills)</td></tr>
           <tr class="expand" data-parent="MUMBAI"><td colspan="6">Ravan (2 kills)</td></tr>
 
-          <!-- Repeat same for other teams... -->
           <tr class="team-row" data-team="BIHARI">
-            <td>2</td><td>BIHARI</td><td>0</td><td>10</td><td>14</td><td>24</td>
+            <td>2</td>
+            <td>BIHARI</td>
+            <td>0</td>
+            <td>10</td>
+            <td>14</td>
+            <td>24</td>
           </tr>
           <tr class="expand" data-parent="BIHARI"><td colspan="6">Blaze (6 kills)</td></tr>
           <tr class="expand" data-parent="BIHARI"><td colspan="6">Shubh (4 kills)</td></tr>
           <tr class="expand" data-parent="BIHARI"><td colspan="6">Zaryab (2 kills)</td></tr>
           <tr class="expand" data-parent="BIHARI"><td colspan="6">No face (0 kills)</td></tr>
 
-          <!-- Add other teams similarly... -->
-          <!-- Continue for RAJASTHAN, PUNJAB, CHENNAI, HYDERABAD, UNKNOWN -->
-          <!-- Skipping for brevity -->
+          <tr class="team-row" data-team="RAJASTHAN">
+            <td>3</td>
+            <td>RAJASTHAN</td>
+            <td>0</td>
+            <td>22</td>
+            <td>1</td>
+            <td>23</td>
+          </tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Varun (1 kill)</td></tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Shaka (0 kills)</td></tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Toxic hell (0 kills)</td></tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Neha (0 kills)</td></tr>
+
+          <tr class="team-row" data-team="PUNJAB">
+            <td>4</td>
+            <td>PUNJAB</td>
+            <td>0</td>
+            <td>8</td>
+            <td>12</td>
+            <td>20</td>
+          </tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Harry (6 kills)</td></tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Gabru (2 kills)</td></tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Legend (2 kills)</td></tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Money (2 kills)</td></tr>
+
+          <tr class="team-row" data-team="CHENNAI">
+            <td>5</td>
+            <td>CHENNAI</td>
+            <td>0</td>
+            <td>13</td>
+            <td>3</td>
+            <td>16</td>
+          </tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Rusher (2 kills)</td></tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Devil (1 kill)</td></tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Nala (0 kills)</td></tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Aghakhan (0 kills)</td></tr>
+
+          <tr class="team-row" data-team="HYDERABAD">
+            <td>6</td>
+            <td>HYDERABAD</td>
+            <td>0</td>
+            <td>14</td>
+            <td>1</td>
+            <td>15</td>
+          </tr>
+          <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Death queen (1 kill)</td></tr>
+          <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Moin (0 kills)</td></tr>
+          <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Justned (0 kills)</td></tr>
+
+          <tr class="team-row" data-team="UNKNOWN">
+            <td>7</td>
+            <td>UNKNOWN TEAM</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr class="expand" data-parent="UNKNOWN"><td colspan="6">Khushi (0 kills)</td></tr>
         </tbody>
       </table>
     </div>
@@ -150,7 +218,25 @@
           <tr><td>3</td><td>Harry</td><td>6</td><td>PUNJAB</td></tr>
           <tr><td>4</td><td>JOKER</td><td>5</td><td>MUMBAI</td></tr>
           <tr><td>5</td><td>Shubh</td><td>4</td><td>BIHARI</td></tr>
-          <!-- Continue rest of top players... -->
+          <tr><td>6</td><td>GOD</td><td>2</td><td>MUMBAI</td></tr>
+          <tr><td>7</td><td>Zaryab</td><td>2</td><td>BIHARI</td></tr>
+          <tr><td>8</td><td>Rusher</td><td>2</td><td>CHENNAI</td></tr>
+          <tr><td>9</td><td>Gabru</td><td>2</td><td>PUNJAB</td></tr>
+          <tr><td>10</td><td>Legend</td><td>2</td><td>PUNJAB</td></tr>
+          <tr><td>11</td><td>Money</td><td>2</td><td>PUNJAB</td></tr>
+          <tr><td>12</td><td>Ravan</td><td>2</td><td>MUMBAI</td></tr>
+          <tr><td>13</td><td>Death queen</td><td>1</td><td>HYDERABAD</td></tr>
+          <tr><td>14</td><td>Devil</td><td>1</td><td>CHENNAI</td></tr>
+          <tr><td>15</td><td>Varun</td><td>1</td><td>RAJASTHAN</td></tr>
+          <tr><td>16</td><td>No face</td><td>0</td><td>BIHARI</td></tr>
+          <tr><td>17</td><td>Nala</td><td>0</td><td>CHENNAI</td></tr>
+          <tr><td>18</td><td>Khushi</td><td>0</td><td>UNKNOWN</td></tr>
+          <tr><td>19</td><td>Moin</td><td>0</td><td>HYDERABAD</td></tr>
+          <tr><td>20</td><td>Justned</td><td>0</td><td>HYDERABAD</td></tr>
+          <tr><td>21</td><td>Shaka</td><td>0</td><td>RAJASTHAN</td></tr>
+          <tr><td>22</td><td>Toxic hell</td><td>0</td><td>RAJASTHAN</td></tr>
+          <tr><td>23</td><td>Aghakhan</td><td>0</td><td>CHENNAI</td></tr>
+          <tr><td>24</td><td>Neha</td><td>0</td><td>RAJASTHAN</td></tr>
         </tbody>
       </table>
     </div>
@@ -161,11 +247,15 @@
     teamRows.forEach(row => {
       row.addEventListener('click', () => {
         const team = row.getAttribute('data-team');
-        const expandRows = document.querySelectorAll(`tr.expand[data-parent="${team}"]`);
-        const isVisible = expandRows[0]?.style.display === 'table-row';
+        const expandRows = document.querySelectorAll(tr.expand[data-parent="${team}"]);
 
+        // Toggle display for this team's expand rows
+        const isVisible = expandRows.length > 0 && expandRows[0].style.display === 'table-row';
+
+        // First hide all expanded rows
         document.querySelectorAll('tr.expand').forEach(er => er.style.display = 'none');
 
+        // If they weren't visible, show them
         if (!isVisible) {
           expandRows.forEach(er => er.style.display = 'table-row');
         }
