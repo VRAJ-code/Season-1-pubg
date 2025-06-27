@@ -8,8 +8,8 @@
   
   <style>
     header {
-  text-align: center;
-}
+      text-align: center;
+    }
 
     /* Reset */
     *, *::before, *::after {
@@ -41,8 +41,8 @@
     /* Header */
     header {
       padding: 1.5rem 1rem;
-      background-color: #251249; /* changed from #343a40 */
-      border-bottom: 1px solid #6b5b8a; /* changed from #495057 */
+      background-color: #251249;
+      border-bottom: 1px solid #6b5b8a;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -51,7 +51,7 @@
       margin: 0;
       font-weight: 700;
       font-size: 1.8rem;
-      color: #ffffff; /* changed from #17a2b8 */
+      color: #ffffff;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       user-select: none;
@@ -63,7 +63,7 @@
       font-weight: 700;
       font-size: 2rem;
       margin-bottom: 1.5rem;
-      color: s#9e8d8d; /* changed from #17a2b8 */
+      color: #9e8d8d;
       letter-spacing: 0.04em;
       user-select: text;
     }
@@ -72,14 +72,14 @@
     .card {
       background-color: #fdffff;
       border-radius: 10px;
-      box-shadow: 0 4px 14px rgba(118, 156, 236, 0.3); /* changed */
+      box-shadow: 0 4px 14px rgba(118, 156, 236, 0.3);
       padding: 2rem 2.5rem;
       border: 1px solid #f0f0f0;
       transition: box-shadow 0.3s ease;
       margin-bottom: 3rem;
     }
     .card:hover {
-      box-shadow: 0 6px 20px rgba(107, 88, 117, 0.6); /* changed */
+      box-shadow: 0 6px 20px rgba(107, 88, 117, 0.6);
     }
 
     /* Table */
@@ -92,7 +92,7 @@
     }
 
     thead tr {
-      background-color: #89a0e0; /* changed from #96d6bd */
+      background-color: #89a0e0;
       color: #eeeeee;
       font-weight: 700;
       text-transform: uppercase;
@@ -113,7 +113,7 @@
     }
 
     tbody tr.team-row {
-      background-color: #e2e6e9; /* changed from #1e1e1e */
+      background-color: #e2e6e9;
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease;
@@ -122,16 +122,16 @@
 
     tbody tr.team-row:hover,
     tbody tr.team-row:focus {
-      background-color: #94a4fc; /* changed from #75c0e2 */
+      background-color: #94a4fc;
       color: #121212;
       outline: none;
-      box-shadow: 0 4px 12px rgba(100, 116, 206, 0.7); /* changed */
+      box-shadow: 0 4px 12px rgba(100, 116, 206, 0.7);
       font-weight: 600;
     }
 
     tbody tr.team-row td {
       padding: 0.85rem 1.2rem;
-      border-right: 1px solid #000000; /* slightly lighter border */
+      border-right: 1px solid #000000;
     }
 
     tbody tr.team-row td:last-child {
@@ -141,12 +141,12 @@
     /* Expanded rows for players */
     tbody tr.expand {
       display: none;
-      background-color: #b8d6f3; /* changed from #2a2a2a */
+      background-color: #b8d6f3;
       border-radius: 6px;
       font-size: 0.9rem;
-      color: #000000; /* changed from #ffb07c */
+      color: #000000;
       font-weight: 500;
-      box-shadow: inset 0 0 8px #a49ef1; /* changed from #ff0040 */
+      box-shadow: inset 0 0 8px #a49ef1;
       user-select: text;
     }
 
@@ -158,7 +158,7 @@
 
     /* Player leaderboard rows */
     tbody tr.player-row {
-      background-color: #f8f9fa; /* changed from #1e1e1e */
+      background-color: #f8f9fa;
       border-radius: 8px;
       box-shadow: 0 1px 2px rgb(0 0 0 / 0.4);
       transition: background-color 0.3s ease;
@@ -166,10 +166,10 @@
 
     tbody tr.player-row:hover,
     tbody tr.player-row:focus {
-      background-color: #9ca2ff; /* changed from #8400ff */
+      background-color: #9ca2ff;
       color: #121212;
       outline: none;
-      box-shadow: 0 4px 12px rgba(167, 183, 253, 0.7); /* changed from cyan glow */
+      box-shadow: 0 4px 12px rgba(167, 183, 253, 0.7);
       font-weight: 600;
       cursor: default;
     }
@@ -208,7 +208,7 @@
       }
       tbody tr.team-row, tbody tr.player-row {
         margin-bottom: 1.25rem;
-        background-color: #2e2e2e; /* changed */
+        background-color: #e2e6e9;
         border-radius: 10px;
         box-shadow: 0 1px 3px rgb(0 0 0 / 0.5);
       }
@@ -226,7 +226,7 @@
         left: 1rem;
         top: 50%;
         transform: translateY(-50%);
-        color: #ff9f40; /* changed from #ff6600 */
+        color: #ff9f40;
         font-weight: 700;
         text-transform: uppercase;
         font-size: 0.8rem;
@@ -235,7 +235,7 @@
       }
       tbody tr.expand td {
         padding-left: 2rem;
-        background-color: #5a3d8b; /* changed */
+        background-color: #5a3d8b;
         border-radius: 0 0 10px 10px;
         font-weight: 500;
         font-size: 0.85rem;
@@ -244,15 +244,33 @@
 
     /* Footer */
     footer {
-      background-color: #4b3476; /* changed from #343a40 */
-      color: #c1b6dc; /* changed from #adb5bd */
+      background-color: #4b3476;
+      color: #c1b6dc;
       text-align: center;
       padding: 1rem 1rem;
       font-size: 0.85rem;
       user-select: none;
-      border-top: 1px solid #6b5b88
+      border-top: 1px solid #6b5b88;
     }
 
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    
+    /* Screen reader only */
+    .sr-only {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
   </style>
 </head>
 <body>
@@ -266,33 +284,13 @@
 
     <section class="card" aria-labelledby="teamStandingsTitle" role="region">
       <h2 id="teamStandingsTitle" class="sr-only">Team Standings (Tap team row to see players)</h2>
+      
+      <button onclick="downloadExcel()" style="background-color:#7483d8; color:white; padding:0.6rem 1.2rem; border:none; border-radius:6px; cursor:pointer; font-weight:600; margin-bottom:1rem;">
+        Download Leaderboard as Excel
+      </button>
+
       <table id="teamTable" role="table" aria-describedby="teamStandingsDesc" tabindex="0" aria-live="polite" aria-relevant="all">
         <thead>
-          <button onclick="downloadExcel()" style="background-color:#7483d8; color:white; padding:0.6rem 1.2rem; border:none; border-radius:6px; cursor:pointer; font-weight:600; margin-top:1rem;">
-  Download Leaderboard as Excel
-</button>
-<script>
-function downloadExcel() {
-  const teamTable = document.getElementById('teamTable');
-  const playerTable = document.getElementById('playerTable');
-
-  function tableToSheet(table) {
-    return XLSX.utils.table_to_sheet(table, { raw: true });
-  }
-
-  const wb = XLSX.utils.book_new();
-  
-  const teamSheet = tableToSheet(teamTable);
-  XLSX.utils.book_append_sheet(wb, teamSheet, "Team Leaderboard");
-
-  const playerSheet = tableToSheet(playerTable);
-  XLSX.utils.book_append_sheet(wb, playerSheet, "Player Leaderboard");
-
-  XLSX.writeFile(wb, "PUBG_Leaderboard.xlsx");
-}
-</script>
-
-
           <tr>
             <th scope="col">Rank</th>
             <th scope="col">Team</th>
@@ -303,97 +301,92 @@ function downloadExcel() {
           </tr>
         </thead>
         <tbody>
-          <!-- Replace the tbody of the teams table with this -->
+          <tr class="team-row" data-team="MUMBAI" tabindex="0" role="row">
+            <td data-label="Rank">1</td>
+            <td data-label="Team">MUMBAI</td>
+            <td data-label="Chicken Dinners">3</td>
+            <td data-label="Position Points">45</td>
+            <td data-label="Kill Points">21</td>
+            <td data-label="Total Points">66</td>
+          </tr>
+          <tr class="expand" data-parent="MUMBAI"><td colspan="6">HARDIK (12 kills)</td></tr>
+          <tr class="expand" data-parent="MUMBAI"><td colspan="6">JOKER (5 kills)</td></tr>
+          <tr class="expand" data-parent="MUMBAI"><td colspan="6">GOD (2 kills)</td></tr>
+          <tr class="expand" data-parent="MUMBAI"><td colspan="6">Ravan (2 kills)</td></tr>
 
-<tbody>
-  <tr class="team-row" data-team="MUMBAI" tabindex="0" role="row">
-    <td data-label="Rank">1</td>
-    <td data-label="Team">MUMBAI</td>
-    <td data-label="Chicken Dinners">3</td>
-    <td data-label="Position Points">45</td>
-    <td data-label="Kill Points">21</td>
-    <td data-label="Total Points">66</td>
-  </tr>
-  <tr class="expand" data-parent="MUMBAI"><td colspan="6">HARDIK (12 kills)</td></tr>
-  <tr class="expand" data-parent="MUMBAI"><td colspan="6">JOKER (5 kills)</td></tr>
-  <tr class="expand" data-parent="MUMBAI"><td colspan="6">GOD (2 kills)</td></tr>
-  <tr class="expand" data-parent="MUMBAI"><td colspan="6">Ravan (2 kills)</td></tr>
+          <tr class="team-row" data-team="BIHARI" tabindex="0" role="row">
+            <td data-label="Rank">2</td>
+            <td data-label="Team">BIHARI</td>
+            <td data-label="Chicken Dinners">1</td>
+            <td data-label="Position Points">20</td>
+            <td data-label="Kill Points">15</td>
+            <td data-label="Total Points">36</td>
+          </tr>
+          <tr class="expand" data-parent="BIHARI"><td colspan="6">Blaze (6 kills)</td></tr>
+          <tr class="expand" data-parent="BIHARI"><td colspan="6">Shubh (4 kills)</td></tr>
+          <tr class="expand" data-parent="BIHARI"><td colspan="6">Zaryab (2 kills)</td></tr>
+          <tr class="expand" data-parent="BIHARI"><td colspan="6">No face (0 kills)</td></tr>
 
-  <tr class="team-row" data-team="BIHARI" tabindex="0" role="row">
-    <td data-label="Rank">2</td>
-    <td data-label="Team">BIHARI</td>
-    <td data-label="Chicken Dinners">1</td>
-    <td data-label="Position Points">20</td>
-    <td data-label="Kill Points">15</td>
-    <td data-label="Total Points">36</td>
-  </tr>
-  <tr class="expand" data-parent="BIHARI"><td colspan="6">Blaze (6 kills)</td></tr>
-  <tr class="expand" data-parent="BIHARI"><td colspan="6">Shubh (4 kills)</td></tr>
-  <tr class="expand" data-parent="BIHARI"><td colspan="6">Zaryab (2 kills)</td></tr>
-  <tr class="expand" data-parent="BIHARI"><td colspan="6">No face (0 kills)</td></tr>
+          <tr class="team-row" data-team="PUNJAB" tabindex="0" role="row">
+            <td data-label="Rank">3</td>
+            <td data-label="Team">PUNJAB</td>
+            <td data-label="Chicken Dinners">1</td>
+            <td data-label="Position Points">21</td>
+            <td data-label="Kill Points">10</td>
+            <td data-label="Total Points">32</td>
+          </tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Harry (6 kills)</td></tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Gabru (2 kills)</td></tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Legend (2 kills)</td></tr>
+          <tr class="expand" data-parent="PUNJAB"><td colspan="6">Money (2 kills)</td></tr>
 
-  <tr class="team-row" data-team="PUNJAB" tabindex="0" role="row">
-    <td data-label="Rank">3</td>
-    <td data-label="Team">PUNJAB</td>
-    <td data-label="Chicken Dinners">1</td>
-    <td data-label="Position Points">21</td>
-    <td data-label="Kill Points">10</td>
-    <td data-label="Total Points">32</td>
-  </tr>
-  <tr class="expand" data-parent="PUNJAB"><td colspan="6">Harry (6 kills)</td></tr>
-  <tr class="expand" data-parent="PUNJAB"><td colspan="6">Gabru (2 kills)</td></tr>
-  <tr class="expand" data-parent="PUNJAB"><td colspan="6">Legend (2 kills)</td></tr>
-  <tr class="expand" data-parent="PUNJAB"><td colspan="6">Money (2 kills)</td></tr>
+          <tr class="team-row" data-team="CHENNAI" tabindex="0" role="row">
+            <td data-label="Rank">4</td>
+            <td data-label="Team">CHENNAI</td>
+            <td data-label="Chicken Dinners">1</td>
+            <td data-label="Position Points">17</td>
+            <td data-label="Kill Points">7</td>
+            <td data-label="Total Points">25</td>
+          </tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Rusher (2 kills)</td></tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Devil (1 kill)</td></tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Nala (0 kills)</td></tr>
+          <tr class="expand" data-parent="CHENNAI"><td colspan="6">Aghakhan (0 kills)</td></tr>
 
-  <tr class="team-row" data-team="CHENNAI" tabindex="0" role="row">
-    <td data-label="Rank">4</td>
-    <td data-label="Team">CHENNAI</td>
-    <td data-label="Chicken Dinners">1</td>
-    <td data-label="Position Points">17</td>
-    <td data-label="Kill Points">7</td>
-    <td data-label="Total Points">25</td>
-  </tr>
-  <tr class="expand" data-parent="CHENNAI"><td colspan="6">Rusher (2 kills)</td></tr>
-  <tr class="expand" data-parent="CHENNAI"><td colspan="6">Devil (1 kill)</td></tr>
-  <tr class="expand" data-parent="CHENNAI"><td colspan="6">Nala (0 kills)</td></tr>
-  <tr class="expand" data-parent="CHENNAI"><td colspan="6">Aghakhan (0 kills)</td></tr>
+          <tr class="team-row" data-team="HYDERABAD" tabindex="0" role="row">
+            <td data-label="Rank">5</td>
+            <td data-label="Team">HYDERABAD</td>
+            <td data-label="Chicken Dinners">1</td>
+            <td data-label="Position Points">16</td>
+            <td data-label="Kill Points">4</td>
+            <td data-label="Total Points">20</td>
+          </tr>
+          <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Death queen (1 kill)</td></tr>
+          <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Moin (0 kills)</td></tr>
+          <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Justned (0 kills)</td></tr>
 
-  <tr class="team-row" data-team="HYDERABAD" tabindex="0" role="row">
-    <td data-label="Rank">5</td>
-    <td data-label="Team">HYDERABAD</td>
-    <td data-label="Chicken Dinners">1</td>
-    <td data-label="Position Points">16</td>
-    <td data-label="Kill Points">4</td>
-    <td data-label="Total Points">20</td>
-  </tr>
-  <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Death queen (1 kill)</td></tr>
-  <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Moin (0 kills)</td></tr>
-  <tr class="expand" data-parent="HYDERABAD"><td colspan="6">Justned (0 kills)</td></tr>
+          <tr class="team-row" data-team="RAJASTHAN" tabindex="0" role="row">
+            <td data-label="Rank">6</td>
+            <td data-label="Team">RAJASTHAN</td>
+            <td data-label="Chicken Dinners">0</td>
+            <td data-label="Position Points">11</td>
+            <td data-label="Kill Points">5</td>
+            <td data-label="Total Points">16</td>
+          </tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Varun (1 kill)</td></tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Shaka (0 kills)</td></tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Toxic hell (0 kills)</td></tr>
+          <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Neha (0 kills)</td></tr>
 
-  <tr class="team-row" data-team="RAJASTHAN" tabindex="0" role="row">
-    <td data-label="Rank">6</td>
-    <td data-label="Team">RAJASTHAN</td>
-    <td data-label="Chicken Dinners">0</td>
-    <td data-label="Position Points">11</td>
-    <td data-label="Kill Points">5</td>
-    <td data-label="Total Points">16</td>
-  </tr>
-  <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Varun (1 kill)</td></tr>
-  <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Shaka (0 kills)</td></tr>
-  <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Toxic hell (0 kills)</td></tr>
-  <tr class="expand" data-parent="RAJASTHAN"><td colspan="6">Neha (0 kills)</td></tr>
-
-  <tr class="team-row" data-team="UNKNOWN" tabindex="0" role="row">
-    <td data-label="Rank">7</td>
-    <td data-label="Team">UNKNOWN</td>
-    <td data-label="Chicken Dinners">0</td>
-    <td data-label="Position Points">2</td>
-    <td data-label="Kill Points">0</td>
-    <td data-label="Total Points">2</td>
-  </tr>
-  <tr class="expand" data-parent="UNKNOWN"><td colspan="6">Khushi (0 kills)</td></tr>
-</tbody>
-
+          <tr class="team-row" data-team="UNKNOWN" tabindex="0" role="row">
+            <td data-label="Rank">7</td>
+            <td data-label="Team">UNKNOWN</td>
+            <td data-label="Chicken Dinners">0</td>
+            <td data-label="Position Points">2</td>
+            <td data-label="Kill Points">0</td>
+            <td data-label="Total Points">2</td>
+          </tr>
+          <tr class="expand" data-parent="UNKNOWN"><td colspan="6">Khushi (0 kills)</td></tr>
         </tbody>
       </table>
     </section>
@@ -445,21 +438,21 @@ function downloadExcel() {
           </tr>
           <tr class="player-row" role="row">
             <td data-label="Rank">6</td>
-            <td data-label="Player">GOD</td>
-            <td data-label="Kills">2</td>
-            <td data-label="Team">MUMBAI</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">7</td>
             <td data-label="Player">Zaryab</td>
             <td data-label="Kills">2</td>
             <td data-label="Team">BIHARI</td>
           </tr>
           <tr class="player-row" role="row">
-            <td data-label="Rank">8</td>
-            <td data-label="Player">Rusher</td>
+            <td data-label="Rank">7</td>
+            <td data-label="Player">GOD</td>
             <td data-label="Kills">2</td>
-            <td data-label="Team">CHENNAI</td>
+            <td data-label="Team">MUMBAI</td>
+          </tr>
+          <tr class="player-row" role="row">
+            <td data-label="Rank">8</td>
+            <td data-label="Player">Ravan</td>
+            <td data-label="Kills">2</td>
+            <td data-label="Team">MUMBAI</td>
           </tr>
           <tr class="player-row" role="row">
             <td data-label="Rank">9</td>
@@ -481,21 +474,21 @@ function downloadExcel() {
           </tr>
           <tr class="player-row" role="row">
             <td data-label="Rank">12</td>
-            <td data-label="Player">Ravan</td>
+            <td data-label="Player">Rusher</td>
             <td data-label="Kills">2</td>
-            <td data-label="Team">MUMBAI</td>
+            <td data-label="Team">CHENNAI</td>
           </tr>
           <tr class="player-row" role="row">
             <td data-label="Rank">13</td>
-            <td data-label="Player">Death queen</td>
-            <td data-label="Kills">1</td>
-            <td data-label="Team">HYDERABAD</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">14</td>
             <td data-label="Player">Devil</td>
             <td data-label="Kills">1</td>
             <td data-label="Team">CHENNAI</td>
+          </tr>
+          <tr class="player-row" role="row">
+            <td data-label="Rank">14</td>
+            <td data-label="Player">Death queen</td>
+            <td data-label="Kills">1</td>
+            <td data-label="Team">HYDERABAD</td>
           </tr>
           <tr class="player-row" role="row">
             <td data-label="Rank">15</td>
@@ -505,57 +498,51 @@ function downloadExcel() {
           </tr>
           <tr class="player-row" role="row">
             <td data-label="Rank">16</td>
-            <td data-label="Player">No face</td>
-            <td data-label="Kills">0</td>
-            <td data-label="Team">BIHARI</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">17</td>
             <td data-label="Player">Nala</td>
             <td data-label="Kills">0</td>
             <td data-label="Team">CHENNAI</td>
           </tr>
           <tr class="player-row" role="row">
-            <td data-label="Rank">18</td>
-            <td data-label="Player">Khushi</td>
-            <td data-label="Kills">0</td>
-            <td data-label="Team">UNKNOWN</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">19</td>
-            <td data-label="Player">Moin</td>
-            <td data-label="Kills">0</td>
-            <td data-label="Team">HYDERABAD</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">20</td>
-            <td data-label="Player">Justned</td>
-            <td data-label="Kills">0</td>
-            <td data-label="Team">HYDERABAD</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">21</td>
-            <td data-label="Player">Shaka</td>
-            <td data-label="Kills">0</td>
-            <td data-label="Team">RAJASTHAN</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">22</td>
-            <td data-label="Player">Toxic hell</td>
-            <td data-label="Kills">0</td>
-            <td data-label="Team">RAJASTHAN</td>
-          </tr>
-          <tr class="player-row" role="row">
-            <td data-label="Rank">23</td>
+            <td data-label="Rank">17</td>
             <td data-label="Player">Aghakhan</td>
             <td data-label="Kills">0</td>
             <td data-label="Team">CHENNAI</td>
           </tr>
           <tr class="player-row" role="row">
-            <td data-label="Rank">24</td>
+            <td data-label="Rank">18</td>
+            <td data-label="Player">Moin</td>
+            <td data-label="Kills">0</td>
+            <td data-label="Team">HYDERABAD</td>
+          </tr>
+          <tr class="player-row" role="row">
+            <td data-label="Rank">19</td>
+            <td data-label="Player">Justned</td>
+            <td data-label="Kills">0</td>
+            <td data-label="Team">HYDERABAD</td>
+          </tr>
+          <tr class="player-row" role="row">
+            <td data-label="Rank">20</td>
+            <td data-label="Player">Shaka</td>
+            <td data-label="Kills">0</td>
+            <td data-label="Team">RAJASTHAN</td>
+          </tr>
+          <tr class="player-row" role="row">
+            <td data-label="Rank">21</td>
+            <td data-label="Player">Toxic hell</td>
+            <td data-label="Kills">0</td>
+            <td data-label="Team">RAJASTHAN</td>
+          </tr>
+          <tr class="player-row" role="row">
+            <td data-label="Rank">22</td>
             <td data-label="Player">Neha</td>
             <td data-label="Kills">0</td>
             <td data-label="Team">RAJASTHAN</td>
+          </tr>
+          <tr class="player-row" role="row">
+            <td data-label="Rank">23</td>
+            <td data-label="Player">Khushi</td>
+            <td data-label="Kills">0</td>
+            <td data-label="Team">UNKNOWN</td>
           </tr>
         </tbody>
       </table>
@@ -564,30 +551,22 @@ function downloadExcel() {
 
   <footer>
     &copy; 2025 PUBG Premier League. All rights reserved.
-      Special thanks to Mohit fot organizing and sponsering sesason 1
   </footer>
 
   <script>
-    // Toggle player detail rows when clicking a team row
-    const teamRows = document.querySelectorAll('tr.team-row');
-
-    teamRows.forEach(row => {
+    // Toggle expand/collapse on team rows
+    document.querySelectorAll('.team-row').forEach(row => {
       row.addEventListener('click', () => {
-        const team = row.getAttribute('data-team');
-        const expandedRows = document.querySelectorAll(`tr.expand[data-parent="${team}"]`);
-        const isExpanded = expandedRows.length > 0 && expandedRows[0].style.display === 'table-row';
+        const teamName = row.getAttribute('data-team');
+        const expands = document.querySelectorAll(`.expand[data-parent="${teamName}"]`);
+        const isVisible = expands.length > 0 && expands[0].style.display === 'table-row';
 
-        expandedRows.forEach(r => {
-          r.style.display = isExpanded ? 'none' : 'table-row';
-          if (!isExpanded) {
-            r.style.animation = 'fadeIn 0.3s ease forwards';
-          } else {
-            r.style.animation = '';
-          }
+        expands.forEach(tr => {
+          tr.style.display = isVisible ? 'none' : 'table-row';
         });
       });
 
-      // Also toggle on Enter key for accessibility
+      // Accessibility: toggle on Enter or Space key press
       row.addEventListener('keydown', e => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
@@ -595,28 +574,29 @@ function downloadExcel() {
         }
       });
     });
+
+    // Hide all expanded rows initially
+    document.querySelectorAll('.expand').forEach(row => {
+      row.style.display = 'none';
+    });
+
+    // Excel export function
+    function downloadExcel() {
+      const table = document.getElementById('teamTable');
+      let html = table.outerHTML;
+
+      // Create a data URI for Excel
+      let url = 'data:application/vnd.ms-excel,' + encodeURIComponent(html);
+
+      // Create download link
+      let link = document.createElement('a');
+      link.href = url;
+      link.download = 'PUBG_Season1_Team_Leaderboard.xls';
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   </script>
-
-  <style>
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    /* Screen reader only */
-    .sr-only {
-      position: absolute !important;
-      width: 1px !important;
-      height: 1px !important;
-      padding: 0 !important;
-      margin: -1px !important;
-      overflow: hidden !important;
-      clip: rect(0, 0, 0, 0) !important;
-      white-space: nowrap !important;
-      border: 0 !important;
-    }
-  </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-
-  
 </body>
 </html>
